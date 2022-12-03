@@ -1,0 +1,23 @@
+{
+  "name": "football-tracker-app-for-pc",
+  "version": "0.0.1",
+  "description": "A  simple app for track in real time the football match",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/football-tracker/pc-app.git"
+  },
+  "author": "Fofh, Tao, Code Lord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/football-tracker/pc-app/issues"
+  },
+  "homepage": "https://github.com/football-tracker/pc-app#readme",
+  "dependencies": {
+    "electron": "^22.0.0"
+  }
+}
