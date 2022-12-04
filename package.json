@@ -1,6 +1,6 @@
 {
   "name": "football-tracker",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "An application that allows you to trace the history of football matches, up to 20 days.",
   "main": "main.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/football-tracker/pc-app#readme",
   "keywords": [
-    "app"
+    "app, football, tracker"
   ],
   "devDependencies": {
     "electron": "^21.2.1",

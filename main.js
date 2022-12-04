@@ -25,7 +25,7 @@ rpc.on("ready", () => {
       buttons: [
         { label: `Nous Rejoindre`, url: `https://discord.gg/zuwvnrKBXy` }
     ],
-        details: "Consulte Les Matchs",
+        details: "Consulte Les Score",
         startTimestamp: new Date(),
         largeImageKey: "foot",
         largeImageText: "Le foot c'est bien"
@@ -34,10 +34,16 @@ rpc.on("ready", () => {
     });
     const terminal_msg = "Le rich presence est en place regarde ton Discord !"
     console.log(terminal_msg);
+    const ok = true
+    if (ok === true) {
+      console.log(ok)
+    } else {
+      console.warn("Le rich presence n'as pas été mis en place !")
+    }
 });
 
 rpc.login({
-    clientId: "1048942028433653812"
+    clientId: "1048979983797850152"
 })
 
 app.whenReady().then(() => {
