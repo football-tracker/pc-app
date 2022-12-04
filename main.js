@@ -5,8 +5,8 @@ function createWindow () {
   const win = new BrowserWindow({
     title: "Football Tracker",
     autoHideMenuBar: true,
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
   })
 
   win.loadFile('./src/index.html')
