@@ -4,6 +4,7 @@ const path = require('path')
 function createWindow () {
   const win = new BrowserWindow({
     title: "Football Tracker",
+    icon: __dirname + './src/assets/img/ballon-de-football.ico',
     autoHideMenuBar: true,
     width: 1280,
     height: 720,

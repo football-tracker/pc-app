@@ -1,27 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
-    font-family: 'Ubuntu', sans-serif;
     padding: 0%;
     margin: 0%;
-    list-style: none;
+    box-sizing: border-box;
+    background-color: #222226;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
 }
 
-#navbar {
-    font-weight: 600;
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: right;
-    padding-right: 20px;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-#nav ul li h3 a{
-    color: white;
+.logo {
+    color: whitesmoke;
+    font-size: 28px;
 }
 
-#nav ul li h3 a:hover {
-    color: orange;
+span {
+    color: blue;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1bcf1b;
+    text-decoration: overline;
+    transition: 200ms;
+}
+
+button {
+    border: none;
+    background-color: #1bcf1b;
 }
