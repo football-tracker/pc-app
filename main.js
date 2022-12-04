@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const config = require('./config.json');
 const path = require('path')
 
 function createWindow () {
@@ -21,20 +22,22 @@ const rpc = new RPC.Client({
 rpc.on("ready", () => {
     
     rpc.setActivity({
-        details: "Consulte Les Matchs", // Details!
-        state: "Football Tracker", // State Of Your RPC Client
+      buttons: [
+        { label: `Nous Rejoindre`, url: `https://discord.gg/zuwvnrKBXy` }
+    ],
+        details: "Consulte Les Matchs",
         startTimestamp: new Date(),
-        largeImageKey: "foot", //  Name Of The Large Image You Uploaded In Assets
-        largeImageText: "Le foot c'est bien" // Text When Hovered On Large Image
+        largeImageKey: "foot",
+        largeImageText: "Le foot c'est bien"
         
         
     });
-    
-    console.log("Rich Presence Is Now Active, Check Your Discord!"); // A Message In Terminal When RPC Is Turned On.
+    const terminal_msg = "Le rich presence est en place regarde ton Discord !"
+    console.log(terminal_msg);
 });
 
 rpc.login({
-    clientId: "1048942028433653812" // Your Client ID
+    clientId: "1048942028433653812"
 })
 
 app.whenReady().then(() => {
