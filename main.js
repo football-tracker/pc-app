@@ -4,7 +4,7 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    title: "Football Tracker",
+    title: "Prédictions Football",
     icon: __dirname + './src/assets/img/ballon-de-football.ico',
     autoHideMenuBar: true,
     width: 1280,
@@ -13,6 +13,16 @@ function createWindow () {
 
   win.loadFile('./src/index.html')
 }
+
+app.whenReady().then(() => {
+  createWindow()
+
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    }
+  })
+})
 
 const RPC = require("discord-rpc");
 const rpc = new RPC.Client({
@@ -44,16 +54,6 @@ rpc.on("ready", () => {
 
 rpc.login({
     clientId: "1048979983797850152"
-})
-
-app.whenReady().then(() => {
-  createWindow()
-
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
-    }
-  })
 })
 
 app.on('window-all-closed', () => {

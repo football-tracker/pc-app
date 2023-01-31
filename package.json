@@ -1,6 +1,6 @@
 {
-  "name": "football-tracker",
-  "version": "1.0.3",
+  "name": "Prediction",
+  "version": "1.0.4",
   "description": "An application that allows you to trace the history of football matches, up to 20 days.",
   "main": "main.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "build": {
     "icon": "./src/assets/img/ballon-de-football.ico",
     "appId": "io.github.football-tracker",
-    "productName": "Football Tracker",
+    "productName": "Prédictions Foot",
     "nsis": {
-      "artifactName": "Football Tracker Setup ${version}.${ext}",
+      "artifactName": "Prédictions Football Setup ${version}.${ext}",
       "oneClick": false,
       "perMachine": false,
       "allowToChangeInstallationDirectory": true,
