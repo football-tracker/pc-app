@@ -5,14 +5,15 @@
 ### Vous avez besoin d'installer NodeJs
 ## Windows : https://nodejs.org/dist/v19.1.0/node-v19.1.0-x64.msi
 
-### Démarrez l'application en faisant
-````
-npm install
-npm run start
-````
-
 ### Dépendance nécessaire :
 ElectronJs, Electron Builder
+
+Installez les en faisant
+```
+npm install
+```
+
+### Démarrez l'application en faisant
 ````
-npm install electron@latest electron-builder
+npm run start
 ````
